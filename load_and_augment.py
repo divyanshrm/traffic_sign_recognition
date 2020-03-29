@@ -1,4 +1,5 @@
 import tensorflow.keras as k
+from preprocess import preprocess
 
 def load_and_augment_data:
 	images=k.preprocessing.image.ImageDataGenerator(featurewise_center=False,
