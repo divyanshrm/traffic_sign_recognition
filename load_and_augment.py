@@ -54,7 +54,7 @@ def load_and_augment_data:
 	    save_format='ppm',
 	    follow_links=False,
 	    subset='validation',
-    	interpolation='nearest')
+    	    interpolation='nearest')
     
-  		return training_gen,testing_gen
+  	return training_gen,testing_gen
   	
