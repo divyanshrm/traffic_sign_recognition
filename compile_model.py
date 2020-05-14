@@ -1,4 +1,4 @@
-from modelcofig import modelconfig
+from modelconfig import modelconfig
 import tensorflow.keras as k
 
 def compile_model_adam(model,lr):

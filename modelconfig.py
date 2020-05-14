@@ -1,9 +1,8 @@
-import tensorflow.keras as k
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense,Dropout,Input,Convolution2D,MaxPool2D,Flatten
+from tensorflow.keras.activations import softmax
 
-
-def modelconfig(dropout_rate)
+def modelconfig(dropout_rate):
 	model=Sequential()
 	model.add(Input(shape=(75,75,1)))
 	model.add(Convolution2D(64,(3,3),activation='relu'))
@@ -17,5 +16,5 @@ def modelconfig(dropout_rate)
 	model.add(Dropout(dropout_rate))
 	model.add(Dense(4096,activation='relu'))
 	model.add(Dropout(dropout_rate))
-	model.add(Dense(43,activation=k.activations.softmax))
+	model.add(Dense(43,activation=softmax))
 	return model
